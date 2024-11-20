@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Orders</h1>
+  <p *ngIf="errorMessage">{{ errorMessage }}</p>
+  <ul>
+    <li *ngFor="let order of orders">
+      <h3>Order ID: {{ order.orderId }}</h3>
+      <p>Customer: {{ order.customerName }}</p>
+      <p>Details: {{ order.details }}</p>
+    </li>
+  </ul>
+</div>
